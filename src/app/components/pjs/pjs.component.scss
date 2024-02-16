@@ -1,0 +1,14 @@
+section {
+  margin-top: 70px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  position: relative;
+  h2 {
+    margin-inline: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    a {
+      color: #000;
+    }
+  }
+}

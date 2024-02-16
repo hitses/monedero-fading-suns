@@ -1,0 +1,14 @@
+<section
+  [style.maxHeight]="sectionHeight()"
+  [style.overflowY]="sectionOverflow()"
+>
+  @if (pjs().length > 0) { @for (pj of pjs(); track $index) {
+  <h2>
+    <a routerLink="/{{ pj.name }}">{{ pj.name | titlecase }}</a>
+  </h2>
+  } } @else {
+  <h2>Crea un nuevo personaje</h2>
+  }
+</section>
+
+<component-add-pj (childrenToggled)="onChildrenToggled($event)" />

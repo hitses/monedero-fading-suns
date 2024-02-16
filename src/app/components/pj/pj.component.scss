@@ -1,0 +1,68 @@
+h1 {
+  margin-inline: 10px;
+  margin-top: 70px;
+  font-size: 2.5rem;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  section {
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .money {
+    margin-top: 50px;
+    width: 100%;
+    h2,
+    h3,
+    p {
+      text-align: center;
+    }
+    .values {
+      display: flex;
+      flex-direction: row;
+      span {
+        margin-inline: 5px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .exp {
+    width: 100%;
+    h2,
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.values {
+  display: flex;
+  flex-direction: row;
+}
+
+.back {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  background-color: black;
+}

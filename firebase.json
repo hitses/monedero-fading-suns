@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/fading-suns-money/browser",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+<h1>{{ pj.name | titlecase }}</h1>
+
+<div>
+  <section class="money">
+    <h2>Dinero</h2>
+    <h3>Fénix</h3>
+    <div class="values">
+      @if (pj.fenix >= 10000) {
+      <span (click)="minusFenix(10000)">-10000</span>
+      } @if (pj.fenix >= 1000) {
+      <span (click)="minusFenix(1000)">-1000</span>
+      } @if (pj.fenix >= 100) {
+      <span (click)="minusFenix(100)">-100</span>
+      }
+      <span (click)="minusFenix(10)">-10</span>
+      <span (click)="minusFenix(5)">-5</span>
+      <span (click)="minusFenix(1)">-1</span>
+    </div>
+    <p>{{ pj.fenix }}</p>
+    <div class="values">
+      <span (click)="plusFenix(1)">+1</span>
+      <span (click)="plusFenix(5)">+5</span>
+      <span (click)="plusFenix(10)">+10</span>
+      @if (pj.fenix >= 100) {
+      <span (click)="plusFenix(100)">+100</span>
+      } @if (pj.fenix >= 1000) {
+      <span (click)="plusFenix(1000)">+1000</span>
+      } @if (pj.fenix >= 10000) {
+      <span (click)="plusFenix(10000)">+10000</span>
+      }
+    </div>
+    <h3>Blasones</h3>
+    <div class="values">
+      <span (click)="minusBlason()">-1</span>
+    </div>
+    <p>{{ pj.blason }}</p>
+    <div class="values">
+      <span (click)="plusBlason()">+1</span>
+    </div>
+    <h3>Alas</h3>
+    <div class="values">
+      <span (click)="minusAla()">-1</span>
+    </div>
+    <p>{{ pj.ala }}</p>
+    <div class="values">
+      <span (click)="plusAla()">+1</span>
+    </div>
+    <h3>Crestas</h3>
+    <div class="values">
+      <span (click)="minusCresta(10)">-10</span>
+      <span (click)="minusCresta(5)">-5</span>
+      <span (click)="minusCresta(1)">-1</span>
+    </div>
+    <p>{{ pj.cresta }}</p>
+    <div class="values">
+      <span (click)="plusCresta(1)">+1</span>
+      <span (click)="plusCresta(5)">+5</span>
+      <span (click)="plusCresta(10)">+10</span>
+    </div>
+  </section>
+
+  <section class="exp">
+    <h2>Experiencia</h2>
+    <div>
+      <div class="values">
+        @if (pj.exp >= 100) {
+        <span (click)="minusExp(100)">-100</span>
+        } @if (pj.exp >= 10) {
+        <span (click)="minusExp(10)">-10</span>
+        }
+        <span (click)="minusExp(1)">-1</span>
+      </div>
+      <p>{{ pj.exp }}</p>
+      <div class="values">
+        <span (click)="plusExp(1)">+1</span>
+      </div>
+    </div>
+  </section>
+</div>
+
+<img
+  routerLink="/"
+  class="back"
+  src="/assets/imgs/back.svg"
+  alt="Botón de volver al inicio con una flecha simple hacia la izquierda"
+/>

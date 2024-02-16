@@ -1,0 +1,82 @@
+<div class="form-container">
+  @if (showForm()) {
+  <form
+    [formGroup]="addPjForm"
+    (ngSubmit)="addPj(showForm())"
+    [ngClass]="{ 'slide-in': slideForm, 'slide-out': !slideForm }"
+  >
+    @if (!addPjValidField('name')) {
+    <label>Nombre</label>
+    } @else {
+    <label class="error-text">Nombre inválido</label>
+    }
+    <input type="text" formControlName="name" />
+
+    <label>Fénix</label>
+    <input
+      type="number"
+      formControlName="fenix"
+      min="0"
+      step="1"
+      (input)="validateFenix($event)"
+    />
+
+    <label>Blasones</label>
+    <input
+      type="number"
+      formControlName="blason"
+      min="0"
+      max="1"
+      step="1"
+      (input)="validateBlason($event)"
+    />
+
+    <label>Alas</label>
+    <input
+      type="number"
+      formControlName="ala"
+      min="0"
+      max="3"
+      step="1"
+      (input)="validateAla($event)"
+    />
+
+    <label>Crestas</label>
+    <input
+      type="number"
+      formControlName="cresta"
+      min="0"
+      max="99"
+      step="1"
+      (input)="validateCresta($event)"
+    />
+
+    <label>Experiencia</label>
+    <input
+      type="number"
+      formControlName="exp"
+      min="0"
+      step="1"
+      (input)="validateExp($event)"
+    />
+
+    <button type="submit" [disabled]="!addPjForm.valid">Crear</button>
+  </form>
+
+  @if (duplicateError()) {
+  <p class="duplicate-error">
+    Ya existe un personaje con el nombre {{ duplicatedName() }}
+  </p>
+  } }
+</div>
+
+<!--  -->
+
+<div class="bottom-buttons">
+  <img
+    src="/assets/imgs/plus.svg"
+    alt="Botón + para añadir nuevo monedero"
+    class="toggle-form {{ showForm() ? 'rotate' : '' }}"
+    (click)="toggleShowForm(showForm())"
+  />
+</div>

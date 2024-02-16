@@ -1,0 +1,93 @@
+.form-container {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+form {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 1.5rem;
+  }
+  .error-text {
+    color: tomato;
+  }
+  input {
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+  }
+  button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+.bottom-buttons {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.duplicate-error {
+  position: fixed;
+  bottom: 370px;
+  color: tomato;
+  font-size: 1rem;
+}
+
+.toggle-form {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  background-color: black;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToBottom {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.slide-in {
+  animation: slideInFromBottom 0.5s forwards;
+}
+
+.slide-out {
+  animation: slideOutToBottom 0.5s forwards;
+}

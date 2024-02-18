@@ -50,4 +50,8 @@ export class PjService {
       return { msg: 'set' };
     }
   }
+
+  updatePjs() {
+    this.getPjs();
+  }
 }

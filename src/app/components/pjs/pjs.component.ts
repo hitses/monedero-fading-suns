@@ -20,6 +20,7 @@ export class PjsComponent {
   sectionOverflow = signal('auto');
 
   constructor() {
+    this.updatePjs();
     this.getPjs();
   }
 
@@ -35,5 +36,9 @@ export class PjsComponent {
     } else {
       this.sectionHeight.set('calc(100vh - 460px)');
     }
+  }
+
+  updatePjs() {
+    this.pjService.updatePjs();
   }
 }

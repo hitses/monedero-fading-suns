@@ -6,13 +6,12 @@ import {
   Validators,
 } from '@angular/forms';
 import { PjService } from '../../services/add-pj.service';
-import { ButtonComponent } from '../button/button.component';
 import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'component-add-pj',
   standalone: true,
-  imports: [ReactiveFormsModule, ButtonComponent, NgClass],
+  imports: [ReactiveFormsModule, NgClass],
   templateUrl: './add-pj.component.html',
   styleUrl: './add-pj.component.scss',
 })

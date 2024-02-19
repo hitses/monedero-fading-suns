@@ -9,56 +9,107 @@
     <h3>Fénix</h3>
     <div class="values">
       @if (pj.fenix >= 10000) {
-      <span (click)="minusFenix(10000)">-10000</span>
+      <component-button
+        value="minus10000"
+        (click)="minusFenix(10000)"
+      ></component-button>
       } @if (pj.fenix >= 1000) {
-      <span (click)="minusFenix(1000)">-1000</span>
+      <component-button
+        value="minus1000"
+        (click)="minusFenix(1000)"
+      ></component-button>
       } @if (pj.fenix >= 100) {
-      <span (click)="minusFenix(100)">-100</span>
+      <component-button
+        value="minus100"
+        (click)="minusFenix(100)"
+      ></component-button>
       }
-      <span (click)="minusFenix(10)">-10</span>
-      <span (click)="minusFenix(5)">-5</span>
-      <span (click)="minusFenix(1)">-1</span>
+      <component-button
+        value="minus10"
+        (click)="minusFenix(10)"
+      ></component-button>
+      <component-button
+        value="minus5"
+        (click)="minusFenix(5)"
+      ></component-button>
+      <component-button
+        value="minus1"
+        (click)="minusFenix(1)"
+      ></component-button>
     </div>
     <p>{{ pj.fenix }}</p>
     <div class="values">
-      <span (click)="plusFenix(1)">+1</span>
-      <span (click)="plusFenix(5)">+5</span>
-      <span (click)="plusFenix(10)">+10</span>
+      <component-button value="plus1" (click)="plusFenix(1)"></component-button>
+      <component-button value="plus5" (click)="plusFenix(5)"></component-button>
+      <component-button
+        value="plus10"
+        (click)="plusFenix(10)"
+      ></component-button>
       @if (pj.fenix >= 100) {
-      <span (click)="plusFenix(100)">+100</span>
+      <component-button
+        value="plus100"
+        (click)="plusFenix(100)"
+      ></component-button>
       } @if (pj.fenix >= 1000) {
-      <span (click)="plusFenix(1000)">+1000</span>
+      <component-button
+        value="plus1000"
+        (click)="plusFenix(1000)"
+      ></component-button>
       } @if (pj.fenix >= 10000) {
-      <span (click)="plusFenix(10000)">+10000</span>
+      <component-button
+        value="plus10000"
+        (click)="plusFenix(10000)"
+      ></component-button>
       }
     </div>
     <h3>Blasones</h3>
     <div class="values">
-      <span (click)="minusBlason()">-1</span>
+      <component-button
+        value="minus1"
+        (click)="minusBlason()"
+      ></component-button>
     </div>
     <p>{{ pj.blason }}</p>
     <div class="values">
-      <span (click)="plusBlason()">+1</span>
+      <component-button value="plus1" (click)="plusBlason()"></component-button>
     </div>
     <h3>Alas</h3>
     <div class="values">
-      <span (click)="minusAla()">-1</span>
+      <component-button value="minus1" (click)="minusAla()"></component-button>
     </div>
     <p>{{ pj.ala }}</p>
     <div class="values">
-      <span (click)="plusAla()">+1</span>
+      <component-button value="plus1" (click)="plusAla()"></component-button>
     </div>
     <h3>Crestas</h3>
     <div class="values">
-      <span (click)="minusCresta(10)">-10</span>
-      <span (click)="minusCresta(5)">-5</span>
-      <span (click)="minusCresta(1)">-1</span>
+      <component-button
+        value="minus10"
+        (click)="minusCresta(10)"
+      ></component-button>
+      <component-button
+        value="minus5"
+        (click)="minusCresta(5)"
+      ></component-button>
+      <component-button
+        value="minus1"
+        (click)="minusCresta(1)"
+      ></component-button>
     </div>
     <p>{{ pj.cresta }}</p>
     <div class="values">
-      <span (click)="plusCresta(1)">+1</span>
-      <span (click)="plusCresta(5)">+5</span>
-      <span (click)="plusCresta(10)">+10</span>
+      <component-button
+        value="plus1"
+        (click)="plusCresta(1)"
+      ></component-button>
+      <component-button
+        value="plus5"
+        (click)="plusCresta(5)"
+      ></component-button>
+      <component-button
+        value="plus10"
+        (click)="plusCresta(10)"
+      ></component-button>
     </div>
   </section>
 
@@ -67,15 +118,24 @@
     <div>
       <div class="values">
         @if (pj.exp >= 100) {
-        <span (click)="minusExp(100)">-100</span>
+        <component-button
+          value="minus10"
+          (click)="minusExp(10)"
+        ></component-button>
         } @if (pj.exp >= 10) {
-        <span (click)="minusExp(10)">-10</span>
+        <component-button
+          value="minus5"
+          (click)="minusExp(5)"
+        ></component-button>
         }
-        <span (click)="minusExp(1)">-1</span>
+        <component-button
+          value="minus1"
+          (click)="minusExp(1)"
+        ></component-button>
       </div>
       <p>{{ pj.exp }}</p>
       <div class="values">
-        <span (click)="plusExp(1)">+1</span>
+        <component-button value="plus1" (click)="plusExp(1)"></component-button>
       </div>
     </div>
   </section>

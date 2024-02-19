@@ -3,62 +3,150 @@
   <button (click)="deletePj()">Eliminar</button>
 </h1>
 
-<div>
+<div class="info">
   <section class="money">
     <h2>Dinero</h2>
     <h3>Fénix</h3>
     <div class="values">
       @if (pj.fenix >= 10000) {
-      <button (click)="minusFenix(10000)" class="small-font">-10K</button>
+      <img
+        src="/assets/imgs/minus10000.svg"
+        alt="Botón para restar 10000"
+        (click)="minusFenix(10000)"
+      />
       } @if (pj.fenix >= 1000) {
-      <button (click)="minusFenix(1000)" class="small-font">-1k</button>
+      <img
+        src="/assets/imgs/minus1000.svg"
+        alt="Botón para restar 1000"
+        (click)="minusFenix(1000)"
+      />
       } @if (pj.fenix >= 100) {
-      <button (click)="minusFenix(100)" class="small-font">-100</button>
+      <img
+        src="/assets/imgs/minus100.svg"
+        alt="Botón para restar 100"
+        (click)="minusFenix(100)"
+      />
       }
-      <button (click)="minusFenix(10)">-10</button>
-      <button (click)="minusFenix(5)">-5</button>
-      <button (click)="minusFenix(1)">-1</button>
+      <img
+        src="/assets/imgs/minus10.svg"
+        alt="Botón para restar 10"
+        (click)="minusFenix(10)"
+      />
+      <img
+        src="/assets/imgs/minus5.svg"
+        alt="Botón para restar 5"
+        (click)="minusFenix(5)"
+      />
+      <img
+        src="/assets/imgs/minus1.svg"
+        alt="Botón para restar 1"
+        (click)="minusFenix(1)"
+      />
     </div>
     <p>{{ pj.fenix }}</p>
     <div class="values">
-      <button (click)="plusFenix(1)">+1</button>
-      <button (click)="plusFenix(5)">+5</button>
-      <button (click)="plusFenix(10)">+10</button>
+      <img
+        src="/assets/imgs/plus1.svg"
+        alt="Botón para sumar 1"
+        (click)="plusFenix(1)"
+      />
+      <img
+        src="/assets/imgs/plus5.svg"
+        alt="Botón para sumar 5"
+        (click)="plusFenix(5)"
+      />
+      <img
+        src="/assets/imgs/plus10.svg"
+        alt="Botón para sumar 10"
+        (click)="plusFenix(10)"
+      />
       @if (pj.fenix >= 100) {
-      <button (click)="plusFenix(100)" class="small-font">+100</button>
+      <img
+        src="/assets/imgs/plus100.svg"
+        alt="Botón para sumar 100"
+        (click)="plusFenix(100)"
+      />
       } @if (pj.fenix >= 1000) {
-      <button (click)="plusFenix(1000)" class="small-font">+1K</button>
+      <img
+        src="/assets/imgs/plus1000.svg"
+        alt="Botón para sumar 1000"
+        (click)="plusFenix(1000)"
+      />
       } @if (pj.fenix >= 10000) {
-      <button (click)="plusFenix(10000)" class="small-font">+10K</button>
+      <img
+        src="/assets/imgs/plus10000.svg"
+        alt="Botón para sumar 10000"
+        (click)="plusFenix(10000)"
+      />
       }
     </div>
     <h3>Blasones</h3>
     <div class="values">
-      <button (click)="minusBlason()">-1</button>
+      <img
+        src="/assets/imgs/minus1.svg"
+        alt="Botón para restar 1"
+        (click)="minusBlason()"
+      />
     </div>
     <p>{{ pj.blason }}</p>
     <div class="values">
-      <button (click)="plusBlason()">+1</button>
+      <img
+        src="/assets/imgs/plus1.svg"
+        alt="Botón para sumar 1"
+        (click)="plusBlason()"
+      />
     </div>
     <h3>Alas</h3>
     <div class="values">
-      <button (click)="minusAla()">-1</button>
+      <img
+        src="/assets/imgs/minus1.svg"
+        alt="Botón para restar 1"
+        (click)="minusAla()"
+      />
     </div>
     <p>{{ pj.ala }}</p>
     <div class="values">
-      <button (click)="plusAla()">+1</button>
+      <img
+        src="/assets/imgs/plus1.svg"
+        alt="Botón para sumar 1"
+        (click)="plusAla()"
+      />
     </div>
     <h3>Crestas</h3>
     <div class="values">
-      <button (click)="minusCresta(10)" class="small-font">-10</button>
-      <button (click)="minusCresta(5)">-5</button>
-      <button (click)="minusCresta(1)">-1</button>
+      <img
+        src="/assets/imgs/minus10.svg"
+        alt="Botón para restar 10"
+        (click)="minusCresta(10)"
+      />
+      <img
+        src="/assets/imgs/minus5.svg"
+        alt="Botón para restar 5"
+        (click)="minusCresta(5)"
+      />
+      <img
+        src="/assets/imgs/minus1.svg"
+        alt="Botón para restar 1"
+        (click)="minusCresta(1)"
+      />
     </div>
     <p>{{ pj.cresta }}</p>
     <div class="values">
-      <button (click)="plusCresta(1)">+1</button>
-      <button (click)="plusCresta(5)">+5</button>
-      <button (click)="plusCresta(10)" class="small-font">+10</button>
+      <img
+        src="/assets/imgs/plus1.svg"
+        alt="Botón para sumar 1"
+        (click)="plusCresta(1)"
+      />
+      <img
+        src="/assets/imgs/plus5.svg"
+        alt="Botón para sumar 5"
+        (click)="plusCresta(5)"
+      />
+      <img
+        src="/assets/imgs/plus10.svg"
+        alt="Botón para sumar 10"
+        (click)="plusCresta(10)"
+      />
     </div>
   </section>
 
@@ -66,15 +154,31 @@
     <h2>Experiencia</h2>
     <div class="values">
       @if (pj.exp >= 100) {
-      <button (click)="minusExp(10)" class="small-font">-10</button>
+      <img
+        src="/assets/imgs/minus10.svg"
+        alt="Botón para restar 10"
+        (click)="minusExp(10)"
+      />
       } @if (pj.exp >= 10) {
-      <button (click)="minusExp(5)">-5</button>
+      <img
+        src="/assets/imgs/minus5.svg"
+        alt="Botón para restar 5"
+        (click)="minusExp(5)"
+      />
       }
-      <button (click)="minusExp(1)">-1</button>
+      <img
+        src="/assets/imgs/minus1.svg"
+        alt="Botón para restar 1"
+        (click)="minusExp(1)"
+      />
     </div>
     <p>{{ pj.exp }}</p>
     <div class="values">
-      <button (click)="plusExp(1)">+1</button>
+      <img
+        src="/assets/imgs/plus1.svg"
+        alt="Botón para sumar 1"
+        (click)="plusExp(1)"
+      />
     </div>
   </section>
 </div>

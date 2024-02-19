@@ -10,8 +10,8 @@ h1 {
     background-color: black;
     color: white;
     font-size: 1rem;
+    padding-top: 3px;
     padding-inline: 10px;
-    cursor: pointer;
     border: 1px solid black;
     border-radius: 50px;
     -webkit-border-radius: 50px;
@@ -21,82 +21,49 @@ h1 {
   }
 }
 
-div {
+.info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  margin: 10px 0;
   section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     h2 {
       font-size: 2.5rem;
     }
-    h3 {
-      font-size: 1.5rem;
-    }
-    p {
-      font-size: 1.5rem;
-    }
-  }
-  section {
-    margin-top: 50px;
-    width: 100%;
-    h2,
     h3,
     p {
-      text-align: center;
+      font-size: 1.5rem;
     }
     .values {
       display: flex;
       flex-direction: row;
-      button {
-        background-color: black;
-        border: none;
-        color: white;
-        font-size: 18px;
+      gap: 5px;
+      img {
         width: 24px;
         height: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-      }
-      button.small-font {
-        font-size: 14px;
       }
     }
   }
-
-  .exp {
-    width: 100%;
-    h2,
-    p {
-      text-align: center;
-    }
-  }
-}
-
-.values {
-  display: flex;
-  flex-direction: row;
 }
 
 .back {
   position: fixed;
   bottom: 10px;
   left: 10px;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 50px;
-  padding-inline: 15px;
-  color: white;
-  cursor: pointer;
-  outline: none;
   background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding-top: 3px;
+  padding-inline: 10px;
+  border: 1px solid black;
+  border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;

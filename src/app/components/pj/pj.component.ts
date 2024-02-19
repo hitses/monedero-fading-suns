@@ -3,13 +3,12 @@ import { Component, inject, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { Pj } from '../../interfaces/pj.interface';
 import { DeletePjIconComponent } from '../../delete-pj-icon/delete-pj-icon.component';
-import { ButtonComponent } from '../button/button.component';
 
 @Component({
   selector: 'app-pj',
   templateUrl: './pj.component.html',
   styleUrls: ['./pj.component.scss'],
-  imports: [RouterLink, TitleCasePipe, DeletePjIconComponent, ButtonComponent],
+  imports: [RouterLink, TitleCasePipe, DeletePjIconComponent],
   standalone: true,
 })
 export class PjComponent {

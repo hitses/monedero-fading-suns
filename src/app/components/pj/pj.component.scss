@@ -38,7 +38,7 @@ div {
       font-size: 1.5rem;
     }
   }
-  .money {
+  section {
     margin-top: 50px;
     width: 100%;
     h2,
@@ -49,6 +49,25 @@ div {
     .values {
       display: flex;
       flex-direction: row;
+      button {
+        background-color: black;
+        border: none;
+        color: white;
+        font-size: 18px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+      button.small-font {
+        font-size: 14px;
+      }
     }
   }
 

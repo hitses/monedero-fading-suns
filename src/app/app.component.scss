@@ -2,34 +2,36 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
-  margin: 10px;
+  padding: 10px;
   font-size: 3rem;
+  background-color: white;
+  width: 100%;
 }
 
-img {
+svg {
   position: fixed;
   top: 0;
   right: 0;
-  margin: 10px;
-  width: 180px;
+  padding: 10px;
+  max-width: 180px;
 }
 
 @media screen and (max-width: 320px) {
-  img {
-    width: 120px;
+  svg {
+    width: 40%;
     top: 10px;
   }
 }
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
-  img {
+  svg {
     width: 120px;
     top: 10px;
   }
 }
 
 @media screen and (min-width: 376px) {
-  img {
+  svg {
     width: 180px;
   }
 }

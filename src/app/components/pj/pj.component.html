@@ -1,6 +1,5 @@
 <h1>
   {{ pj.name | titlecase }}
-  <button (click)="deletePj()">Eliminar</button>
 </h1>
 
 <div class="info">
@@ -184,3 +183,4 @@
 </div>
 
 <button routerLink="/" class="back">Volver</button>
+<button (click)="deletePj()" class="delete">Eliminar</button>

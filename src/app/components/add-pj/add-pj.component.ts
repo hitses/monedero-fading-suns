@@ -6,12 +6,12 @@ import {
   Validators,
 } from '@angular/forms';
 import { PjService } from '../../services/add-pj.service';
-import { NgClass } from '@angular/common';
+import { NgClass, TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'component-add-pj',
   standalone: true,
-  imports: [ReactiveFormsModule, NgClass],
+  imports: [ReactiveFormsModule, NgClass, TitleCasePipe],
   templateUrl: './add-pj.component.html',
   styleUrl: './add-pj.component.scss',
 })

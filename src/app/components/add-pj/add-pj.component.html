@@ -5,6 +5,14 @@
     (ngSubmit)="addPj(showForm())"
     [ngClass]="{ 'slide-in': slideForm, 'slide-out': !slideForm }"
   >
+    @if (duplicateError()) {
+    <label class="duplicate-error">
+      {{ duplicatedName() | titlecase }} ya existe
+    </label>
+    }
+
+    <!--  -->
+
     @if (!addPjValidField('name')) {
     <label>Nombre</label>
     } @else {
@@ -62,12 +70,7 @@
 
     <button type="submit" [disabled]="!addPjForm.valid">Crear</button>
   </form>
-
-  @if (duplicateError()) {
-  <p class="duplicate-error">
-    Ya existe un personaje con el nombre {{ duplicatedName() }}
-  </p>
-  } }
+  }
 </div>
 
 <!--  -->
